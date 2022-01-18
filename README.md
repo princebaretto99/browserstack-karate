@@ -9,10 +9,24 @@ Karate is the only open-source tool to combine API test-automation, mocks, perfo
 
 Add the below snippet with your capabilities
 ```
-    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESSKEY"} }
+    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "princetonbaretto_7D2Tbt", "browserstack.key" : "qWi4tAEhsqyYmD7aAFR4"} }
     
     * configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: 'http://hub-cloud.browserstack.com/wd/hub' }
 ```
 Note: Capabilities can be generated using : https://www.browserstack.com/automate/capabilities
+
+## Running one feature on multiple browsers on BrowserStack
+
+In this case we can use the example table and configure individual drivers based on the value of the example table.
+Please refer to [multipleBrowser.feature](src/test/java/examples/multipleBrowser/multipleBrowser.feature)
+
+## Running all features in parallel on BrowserStack
+
+In this case, we can use the karate runner and execute all the feature files in a directory as mentioned below:
+
+```
+    Results results = Runner.path("classpath:examples")
+```
+
 
 
