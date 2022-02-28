@@ -26,6 +26,11 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
+        <dependency>
+      <groupId>com.browserstack</groupId>
+      <artifactId>browserstack-local-java</artifactId>
+      <version>1.0.3</version>
+  </dependency>
     </dependencies>
 
     <build>

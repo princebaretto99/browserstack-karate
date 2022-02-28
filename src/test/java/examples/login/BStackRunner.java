@@ -17,7 +17,7 @@ public class BStackRunner {
             //USING REST API TO MARK TEST
             OkHttpClient client = new OkHttpClient().newBuilder()
                     .build();
-            String credential = Credentials.basic("BROWSERSTACK_USERNAME", "BROWSERSTACK_ACCESSKEY");
+            String credential = Credentials.basic("BROWSERSTACK_USERNAME", "BROWSERSTACK_ACCESS_KEY");
             RequestBody formBody = new FormBody.Builder()
                     .add("status", "passed")
                     .add("reason", "Titles Matched!")

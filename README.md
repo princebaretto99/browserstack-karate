@@ -9,7 +9,7 @@ Karate is the only open-source tool to combine API test-automation, mocks, perfo
 
 Add the below snippet with your capabilities
 ```
-    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "princetonbaretto_7D2Tbt", "browserstack.key" : "qWi4tAEhsqyYmD7aAFR4"} }
+    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESS_KEY"} }
     
     * configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: 'http://hub-cloud.browserstack.com/wd/hub' }
 ```
@@ -27,6 +27,12 @@ In this case, we can use the karate runner and execute all the feature files in 
 ```
     Results results = Runner.path("classpath:examples")
 ```
+
+## Running features using Local Testing on BrowserStack
+
+In this case, we can use the `browserstack-local` language bindings to start and stop the Local Instance:
+
+Please refer to [localLogin.feature](src/test/java/examples/localTests/localLogin.feature)
 
 
 

@@ -5,8 +5,8 @@ Feature: sample karate test script
     * def data =
       """
       {
-      chrome_version_1: { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESSKEY"} },
-      chrome_version_2: { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "11", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESSKEY"} }
+      chrome_version_1: { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "build" : "Karate Examples" , "name" : "Karate Parallel Test" , "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESS_KEY"} },
+      chrome_version_2: { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "build" : "Karate Examples" , "name" : "Karate Parallel Test" , "os" : "Windows", "os_version" : "11", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESS_KEY"} }
       }
       """
 

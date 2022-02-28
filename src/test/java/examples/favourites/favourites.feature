@@ -2,7 +2,7 @@ Feature: sample karate test script
   for help, see: https://github.com/intuit/karate/wiki/IDE-Support
 
   Background:
-    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESSKEY"} }
+    * def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { "build" : "Karate Examples" , "name" : "Karate Favourite Test" , "os" : "Windows", "os_version" : "10", "browserName" : "Chrome", "browserstack.user" : "BROWSERSTACK_USERNAME", "browserstack.key" : "BROWSERSTACK_ACCESS_KEY"} }
     * configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: 'http://hub-cloud.browserstack.com/wd/hub' }
 
 
