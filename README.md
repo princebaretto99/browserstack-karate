@@ -5,7 +5,7 @@
 
 Karate is the only open-source tool to combine API test-automation, mocks, performance-testing and even UI automation into a single, unified framework. The BDD syntax popularized by Cucumber is language-neutral, and easy for even non-programmers. Assertions and HTML reports are built-in, and you can run tests in parallel for speed.
 
-## Integration with BrowserStack
+## Integration with BrowserStack Automate
 
 Add the below snippet with your capabilities
 ```
@@ -24,14 +24,14 @@ You can execute anyone of the below tests.
 </ul>
 
 
-## Running one feature on multiple browsers on BrowserStack
+## Running one feature on multiple browsers on BrowserStack Automate
 
 In this case we can use the example table and configure individual drivers based on the value of the example table.
 Please refer to [multipleBrowser.feature](src/test/java/examples/multipleBrowser/multipleBrowser.feature)
 
 File to be executed: [MulitpleBrowser.java](src/test/java/examples/multipleBrowser/MultipleBrowser.java)
 
-## Running all features in parallel on BrowserStack
+## Running all features in parallel on BrowserStack Automate
 
 In this case, we can use the karate runner and execute all the feature files in a directory as mentioned below:
 
@@ -40,7 +40,7 @@ In this case, we can use the karate runner and execute all the feature files in 
 ```
 File to be executed: [ExamplesTest.java](src/test/java/examples/ExamplesTest.java)
 
-## Running features using Local Testing on BrowserStack
+## Running features using Local Testing on BrowserStack Automate
 
 <b>Note:</b> For this example we will be using [this](https://github.com/browserstack/browserstack-demo-app) demo application for verifying Local Testing. Please refer to the README.md file for steps to set up.
 
