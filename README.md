@@ -19,8 +19,8 @@ Note: Capabilities can be generated using : https://www.browserstack.com/automat
 
 You can execute anyone of the below tests.
 <ul>
-    <li>[LoginRunner.java](src/test/java/examples/login/LoginRunner.java)</li>
-    <li>[FavouriteRunner.java](src/test/java/examples/favourites/FavouriteRunner.java)</li>
+    <li><a href="src/test/java/examples/login/LoginRunner.java">LoginRunner.java</a></li>
+    <li><a href="src/test/java/examples/favourites/FavouriteRunner.java">FavouriteRunner.java</a></li>
 </ul>
 
 
