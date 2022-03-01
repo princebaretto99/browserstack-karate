@@ -47,6 +47,7 @@ File to be executed: [ExamplesTest.java](src/test/java/examples/ExamplesTest.jav
 In this case, we can use the `browserstack-local` language bindings to start and stop the Local Instance:
 
 Please refer to [localLogin.feature](src/test/java/examples/localTests/localLogin.feature)
+File to be executed: [LocalLoginRunner.java](src/test/java/examples/localTests/LocalLoginRunner.java)
 
 
 
