@@ -35,10 +35,10 @@ File to be executed: [MulitpleBrowser.java](src/test/java/examples/multipleBrows
 
 In this case, we can use the karate runner and execute all the feature files in a directory as mentioned below:
 
-File to be executed: [ExamplesTest.java](src/test/java/examples/ExamplesTest.java)
 ```
     Results results = Runner.path("classpath:examples").parallel(5);
 ```
+File to be executed: [ExamplesTest.java](src/test/java/examples/ExamplesTest.java)
 
 ## Running features using Local Testing on BrowserStack
 
