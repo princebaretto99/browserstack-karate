@@ -15,20 +15,34 @@ Add the below snippet with your capabilities
 ```
 Note: Capabilities can be generated using : https://www.browserstack.com/automate/capabilities
 
+## Running one feature on BrowserStack Automate
+
+You can execute anyone of the below tests.
+<ul>
+    <li>[LoginRunner.java](src/test/java/examples/login/LoginRunner.java)</li>
+    <li>[FavouriteRunner.java](src/test/java/examples/favourites/FavouriteRunner.java)</li>
+</ul>
+
+
 ## Running one feature on multiple browsers on BrowserStack
 
 In this case we can use the example table and configure individual drivers based on the value of the example table.
 Please refer to [multipleBrowser.feature](src/test/java/examples/multipleBrowser/multipleBrowser.feature)
 
+File to be executed: [MulitpleBrowser.java](src/test/java/examples/multipleBrowser/MultipleBrowser.java)
+
 ## Running all features in parallel on BrowserStack
 
 In this case, we can use the karate runner and execute all the feature files in a directory as mentioned below:
 
+File to be executed: [ExamplesTest.java](src/test/java/examples/ExamplesTest.java)
 ```
-    Results results = Runner.path("classpath:examples")
+    Results results = Runner.path("classpath:examples").parallel(5);
 ```
 
 ## Running features using Local Testing on BrowserStack
+
+<b>Note:</b> For this example we will be using [this](https://github.com/browserstack/browserstack-demo-app) demo application for verifying Local Testing. Please refer to the README.md file for steps to set up.
 
 In this case, we can use the `browserstack-local` language bindings to start and stop the Local Instance:
 
